@@ -1,0 +1,31 @@
+/* Nicole Snow
+   styles for www.nickisnow.com
+*/
+
+
+/* ---------main structure styles--------- */
+body	{
+	font-family: Arial, Helvetica, Geneva, sans-serif;
+	font-size: 1.7em;
+	color: #000000;
+	background: #000000 url("../img/starfield_background.jpg") repeat fixed;
+	padding-top: 45px;
+	position: relative;
+}
+.container {
+	width: 100%;
+	background-color: hsla(0, 0%, 100%, 0.8);
+	padding: 0 2.5% 25px 2.5%;
+	margin: 0px auto 40px auto;
+}
+
+/* ---------image styles--------- */
+img {
+	width: 600px;
+	float: left;
+}
+
+/* ---------list styles--------- */
+ul > li {
+	list-style: none;
+}
