@@ -27,7 +27,7 @@ From the command line:
 4. `git add -A`
 5. `git commit -m ‘Relevant detailed commit message.`
 6. `git push **github** **relevantBranchName**`
-7. `git push **stagingServer** **relevantBranchName**`
+7. `git push **stagingServer** **relevantBranchName**` **Does this work?**
   (**stagingServer** is the name given to the staging server)
 8. Test new feature extensively on staging server
 
