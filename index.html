@@ -144,10 +144,6 @@
 			<h3>Employee Directory</h3>
 			<p>Local storage directory that allows adding and deleting employee information.</p>
 		</div>
-	</div>
-	<div class="divide">
-		<hr>
-		<div class="separator"></div>
 	</div>	
 	<h2>Design Projects</h2>
 	<div class="row textMiddle">
@@ -173,25 +169,32 @@
 		<div class="separator"></div>
 	</div>
 	<!-- Contact Form -->
-	<div class="row">     
-	    <div class="col-md-8" id="contact">
-	        <form action="mailer.php" id="contact-form" method="post" name="contact-form">
-
+	<div class="row">  
+		<h2>Contact Me</h2>   
+	    <div class="col-sm-8 col-sm-offset-2" id="contact">
+	        <form class="form-horizontal" action="" id="contact-form" method="post" name="contact-form">
 	            <!-- Input fields -->
-	            <div class="buffer-bottom">
-	                <input id="field1" name="name" placeholder="Name" required type="text">
-	                <input name="email" placeholder="Email" required type="email">
-	                <input name="phone" placeholder="Phone" type="text">
+	            <div class="form-group">
+	            	<label class="col-sm-3" for="name">Name</label>
+                	<div class="col-sm-9"><input class="form-control" id="name" name="name" required type="text"></div>
 	            </div>
-
+	            <div class="form-group">
+	            	<label class="col-sm-3" for="email">Email address</label>
+	                <div class="col-sm-9"><input class="form-control" name="email" id="email" required type="email"></div>
+	            </div>
+	            <div class="form-group">
+	            	<label class="col-sm-3" for="phone">Phone Number</label>
+	                <div class="col-sm-9"><input class="form-control" name="phone" id="phone" type="text"></div>
+	            </div>
 	            <!-- Message -->
-	            <div class="buffer-bottom">
-	                <textarea class="message" name="message" placeholder="Message" required="" rows="6"></textarea>
-	            </div><span id="submit-response"></span>
-
+	            <div class="form-group">
+	            	<label class="col-sm-3" for="message">Message</label>
+	                <div class="col-sm-9"><textarea id="message" class="form-control" name="message" required rows="6"></textarea></div>
+	            </div>
+	            <span id="submit-response"></span>
 	            <!-- Submit -->
 	            <div class="pull-right">
-	                <input class="button" type="submit" value="send">
+	                <input class="btn btn-primary" type="submit" value="send">
 	            </div>
 	        </form>
 	    </div>
