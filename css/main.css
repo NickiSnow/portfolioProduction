@@ -84,6 +84,10 @@ img {
 	border: #424242 solid 2px;
 }
 
+#portrait {
+	background-color: hsla(0, 0%, 0%, 0);
+}
+
 /* ---------list styles--------- */
 ul > li {
 	list-style: none;
