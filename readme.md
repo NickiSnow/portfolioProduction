@@ -35,10 +35,10 @@ From the command line:
 9. Test new feature extensively on staging server
 10. If necessary, repeat steps 2-9
 
-###  When Ready, Delete New Branch and Deploy Change to the Live Server.
-1. `git branch -d **relevantBranchName**`  # deletes new branch in local repo
-2. Delete branch in remote repo
+###  When Ready, Deploy Change to the Live Server and Delete New Branch.
+1. `git push **github** master`  # updates master branch in remote repo
+2. `git push **liveServer** master` #Deploys changes to live server
+3. `git branch -d **relevantBranchName**`  # deletes new branch in local repo
+4. Delete branch in remote repo
   1. Go to [github.com/.../branches](https://github.com/NickiSnow/portfolioProduction/branches)
   2. Click trash can icon to delete branch
-3. `git push **github** master`  # updates master branch in remote repo
-4. `git push **liveServer** master` #Deploys changes to live server
