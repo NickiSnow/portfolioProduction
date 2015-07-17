@@ -26,16 +26,19 @@ From the command line:
 3. make changes as required in local repo files
 4. `git add -A`
 5. `git commit -m ‘Relevant detailed commit message.`
-6. `git push **github** **relevantBranchName**`
-7. `git push **stagingServer** **relevantBranchName**` **Does this work?**
-  (**stagingServer** is the name given to the staging server)
-8. Test new feature extensively on staging server
-
-### When Ready, Merge and Delete New Branch and deploy change to the live server.
-
-1. `git checkout master` # switches to master
-2. `git merge **relevantBranchName**`  # merges branches
+6. `git push **github** **relevantBranchName**`  # pushes new branch to Github
+7. `git checkout master` # switches to master
+8. `git merge **relevantBranchName**`  # merges local branches
   1. Resolve any conflicts
-3. `git branch -d **relevantBranchName**`  # deletes new branch
-4. `git push **github** master`  # updates remote repo
-5. `git push **liveServer** master` #Deploys changes to live server
+8. `git push **stagingServer** master`
+  (**stagingServer** is the name given to the staging server)
+9. Test new feature extensively on staging server
+10. If necessary, repeat steps 2-9
+
+###  When Ready, Delete New Branch and Deploy Change to the Live Server.
+1. `git branch -d **relevantBranchName**`  # deletes new branch in local repo
+2. Delete branch in remote repo
+  1. Go to [github.com/.../branches](https://github.com/NickiSnow/portfolioProduction/branches)
+  2. Click trash can icon to delete branch
+3. `git push **github** master`  # updates master branch in remote repo
+4. `git push **liveServer** master` #Deploys changes to live server
